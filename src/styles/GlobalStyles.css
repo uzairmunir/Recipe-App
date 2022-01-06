@@ -1,0 +1,595 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.home-page {
+  padding: 1rem 7rem;
+}
+.home-page > header {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-text {
+  color: white;
+  text-transform: capitalize;
+}
+.hero-text > h1 {
+  font-size: 4rem;
+  padding: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.hero-text > h4 {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.about-img {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.recipe-container {
+  padding: 1rem 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.recipe-row-left {
+  flex: 0.7;
+  height: 400px;
+  width: 500px;
+  padding: 1rem;
+}
+.recipe-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 0.3rem;
+}
+.recipe-row-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.recipe-row-right > h2 {
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 1rem 0;
+}
+.recipe-row-right > p {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 400;
+  font-family: sans-serif;
+  padding: 0.4rem 0;
+  word-spacing: 0.5rem;
+  line-height: 2rem;
+}
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  align-items: center;
+}
+.icons-container > article {
+  padding: 1rem;
+}
+.icon {
+  font-size: 2rem;
+  font-weight: 500;
+  align-items: center;
+}
+.icons-container > article > h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding: 0.3rem 0;
+}
+.icons-container > article > p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding: 0.3rem 0;
+}
+.tags-container {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.tags-container > h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #333;
+}
+.tags-container > p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: sans-serif;
+  padding: 0.3rem;
+  background-color: #554ed9;
+  border-radius: 0.3rem;
+  margin: 0 0.5rem;
+  color: white;
+}
+.recipe-content {
+  display: flex;
+  padding: 1rem 7rem;
+}
+.first-column {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  flex: 1;
+}
+.first-column > h4 {
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  letter-spacing: 0.1rem;
+}
+.single-instruction > header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.single-instruction > header > p {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 0.5rem 0;
+  letter-spacing: 0.1rem;
+  color: #554ed9;
+}
+.single-instruction > header > div {
+  height: 0.7px;
+  width: 80%;
+  background-color: gray;
+  color: gray;
+}
+.single-instruction > p {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #333;
+  width: 80%;
+}
+.second-column {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.second-column > div > h4 {
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  letter-spacing: 0.1rem;
+}
+.second-column > div > p {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #333;
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+}
+.single-tool {
+  color: #554ed9 !important;
+}
+
+@media screen and (max-width: 550px) {
+  .home-page {
+    padding: 1rem;
+  }
+
+  .hero-text {
+    color: white;
+    text-transform: capitalize;
+  }
+  .hero-text > h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
+  .hero-text > h4 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-align: center;
+  }
+  .about-img {
+    height: 300px;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .recipe-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .recipe-row-left {
+    height: 400px;
+    width: 80%;
+  }
+  .recipe-row-right > h2 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 1rem 0;
+  }
+  .tags-container {
+    display: flex;
+
+    padding: 1rem 0;
+    align-items: center;
+  }
+  .tags-container > h3 {
+    display: none;
+  }
+  .tags-container > p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 0.3rem;
+    background-color: #554ed9;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+    color: white;
+  }
+  .recipe-content {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .first-column {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex: 1;
+  }
+  .first-column > h4 {
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+  }
+  .single-instruction > header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .single-instruction > header > p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+    color: #554ed9;
+  }
+  .single-instruction > header > div {
+    height: 0.7px;
+    width: 80%;
+    background-color: gray;
+    color: gray;
+  }
+  .single-instruction > p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #333;
+    width: 100%;
+  }
+  .second-column {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .second-column > div > h4 {
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+  }
+  .second-column > div > p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #333;
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+  }
+}
+@media screen and (min-width: 551px) and (max-width: 770px) {
+  .home-page {
+    padding: 1rem;
+  }
+
+  .hero-text {
+    color: white;
+    text-transform: capitalize;
+  }
+  .about-img {
+    height: 300px;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .hero-text > h1 {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
+  .hero-text > h4 {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-align: center;
+  }
+  .recipe-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .recipe-row-left {
+    height: 400px;
+    width: 80%;
+  }
+  .recipe-row-right > h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 1rem 0;
+  }
+  .tags-container {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+  }
+  /* .tags-container > h3 {
+    display: none;
+  } */
+  .tags-container > p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 0.3rem;
+    background-color: #554ed9;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+    color: white;
+  }
+  .recipe-content {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .first-column {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex: 1;
+  }
+  .first-column > h4 {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+  }
+  .single-instruction > header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .single-instruction > header > p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+    color: #554ed9;
+  }
+  .single-instruction > header > div {
+    height: 0.7px;
+    width: 80%;
+    background-color: gray;
+    color: gray;
+  }
+  .single-instruction > p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #333;
+    width: 100%;
+  }
+  .second-column {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .second-column > div > h4 {
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+  }
+  .second-column > div > p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #333;
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+  }
+}
+@media screen and (min-width: 771px) and (max-width: 1024px) {
+  .home-page {
+    padding: 1rem 2rem;
+  }
+
+  .hero-text {
+    color: white;
+    text-transform: capitalize;
+  }
+  .hero-text > h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
+  .hero-text > h4 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-align: center;
+  }
+  .recipe-container {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .recipe-row-left {
+    height: 400px;
+    width: 80%;
+  }
+  .recipe-row-right > h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 1rem 0;
+  }
+  .tags-container {
+    display: flex;
+
+    padding: 1rem 0;
+    align-items: center;
+  }
+  /* .tags-container > h3 {
+    display: none;
+  } */
+  .tags-container > p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 0.3rem;
+    background-color: #554ed9;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+    color: white;
+  }
+  .recipe-content {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .first-column {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex: 1;
+  }
+  .first-column > h4 {
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+  }
+  .single-instruction > header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .single-instruction > header > p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+    color: #554ed9;
+  }
+  .single-instruction > header > div {
+    height: 0.7px;
+    width: 80%;
+    background-color: gray;
+    color: gray;
+  }
+  .single-instruction > p {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #333;
+    width: 100%;
+  }
+  .second-column {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .second-column > div > h4 {
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+  }
+  .second-column > div > p {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #333;
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+  }
+}
